@@ -1,1 +1,0 @@
-npm i gulp gulp-sass browser-sync gulp-cssnano del gulp-autoprefixer --save-dev
