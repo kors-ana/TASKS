@@ -1,0 +1,33 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  background-color: #000; }
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.block_overlapping {
+  height: 280px;
+  width: 750px;
+  border: 5px solid #fff;
+  border-bottom: transparent;
+  position: relative; }
+
+.block_inside {
+  position: relative;
+  width: 750px;
+  height: 5px;
+  background-color: #fff;
+  z-index: 5; }
+
+.image {
+  position: absolute;
+  top: -80px;
+  left: 170px; }
