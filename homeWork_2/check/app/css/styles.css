@@ -1,0 +1,96 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  background-color: #fff; }
+
+section {
+  width: 450px;
+  margin: 40px auto;
+  background-color: #fff; }
+
+.slider {
+  position: relative; }
+
+.slider input[type=radio] {
+  display: none; }
+
+.slider-inner {
+  overflow: hidden; }
+
+.slider-slides {
+  width: 300%;
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  -o-transition: transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease; }
+
+.slider-slides .slider__item {
+  float: left;
+  width: 450px;
+  height: 320px; }
+
+.slider_1 {
+  background-color: #9A59B5; }
+
+.slider_2 {
+  background-color: #1BBC9B; }
+
+.slider_3 {
+  background-color: #3598DB; }
+
+.slider-controls {
+  margin-bottom: 10px;
+  text-align: center;
+  left: 55%;
+  top: 70%;
+  margin-left: -80px;
+  position: absolute;
+  z-index: 1; }
+
+.slider-controls label {
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 25px 12px 0 16px;
+  position: relative;
+  width: 8px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: background ease-in-out .5s;
+  -o-transition: background ease-in-out .5s;
+  transition: background ease-in-out .5s; }
+
+.slider-controls label:after {
+  border: 2px solid #ddd;
+  content: "";
+  display: block;
+  height: 12px;
+  left: -4px;
+  position: absolute;
+  top: -4px;
+  width: 12px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background-color: #ddd; }
+
+#btn-1:checked ~ .slider-inner .slider-slides {
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0); }
+
+#btn-2:checked ~ .slider-inner .slider-slides {
+  -webkit-transform: translate(-450px);
+      -ms-transform: translate(-450px);
+          transform: translate(-450px); }
+
+#btn-3:checked ~ .slider-inner .slider-slides {
+  -webkit-transform: translate(-900px);
+      -ms-transform: translate(-900px);
+          transform: translate(-900px); }
