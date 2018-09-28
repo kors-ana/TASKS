@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none; }
+
+@font-face {
+  font-family: 'Myriad_Pro';
+  src: url("../font/Myriad_Pro.otf");
+  font-style: normal;
+  font-weight: normal; }
+
+.text__beginning, .variants-list__item {
+  font-family: 'Myriad_Pro';
+  font-size: 28px; }
+
+body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #F39C11; }
+
+.text__container {
+  color: #fff;
+  height: 30px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.text__beginning {
+  float: left; }
+
+.text__variants-list {
+  float: right;
+  margin-left: 20px;
+  -webkit-animation-name: change;
+          animation-name: change;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+.variants-list__item {
+  padding-bottom: 5px;
+  font-weight: bold; }
+
+@-webkit-keyframes change {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  14% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  38% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px); }
+  63% {
+    -webkit-transform: translateY(-85px);
+            transform: translateY(-85px); }
+  89% {
+    -webkit-transform: translateY(-125px);
+            transform: translateY(-125px); }
+  100% {
+    -webkit-transform: translateY(-145px);
+            transform: translateY(-145px); } }
+
+@keyframes change {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  14% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  38% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px); }
+  63% {
+    -webkit-transform: translateY(-85px);
+            transform: translateY(-85px); }
+  89% {
+    -webkit-transform: translateY(-125px);
+            transform: translateY(-125px); }
+  100% {
+    -webkit-transform: translateY(-145px);
+            transform: translateY(-145px); } }
