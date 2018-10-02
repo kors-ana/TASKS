@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Slider</title>
+    <title>TaskList</title>
 </head>
 <body>
 
@@ -17,25 +17,41 @@
                     <p class="list__data">March 4, 2016</p>
                 </div>
 
-                <div class="tasks">
+                    <div class="tasks">
 
-                    <div class="tasks__points">
-                        <div class="tasks__point point1">Create a list</div>
-                        <div class="tasks__point point2">Complete the first task</div>
-                        <div class="tasks__point point3">Write some CSS code</div>
-                        <div class="tasks__point point4">Amaze the world</div>
-                    </div>
-                    <div class="tasks__check">
-                        <input type="radio" name="point" id="point1"  class='tasks__check-radio' checked>
-                        <input type="radio" name="point" id="point2" class='tasks__check-radio'>
-                        <input type="radio" name="point" id="point3" class='tasks__check-radio'>
-                        <input type="radio" name="point" id="point4" class='tasks__check-radio'>
-                    </div>
-                    <div class="controls">
-                        <label for="point1"></label>
-                        <label for="point2"></label>
-                        <label for="point3"></label>
-                        <label for="point4"></label>
+                        <label class="tasks__container">
+                            <input type="checkbox" name="point" class='tasks__check-radio' checked>
+                            <span class="tasks__point">Create a list</span>
+                            <div class="tasks__custom-radio"></div>
+                            <svg class='tasks__checked' width="15px" height="10px">
+                                <polyline points="1,5 6,9 14,1" />
+                            </svg>
+                        </label>
+                        <label class="tasks__container">
+                            <input type="checkbox" name="point" class='tasks__check-radio'>
+                            <span class="tasks__point">Complete the first task</span>
+                            <div class="tasks__custom-radio"></div>
+                            <svg class='tasks__checked' width="15px" height="10px">
+                                <polyline points="1,5 6,9 14,1" />
+                            </svg>
+                        </label>
+                        <label class="tasks__container">
+                            <input type="checkbox" name="point" class='tasks__check-radio'>
+                            <span class="tasks__point">Write some CSS code</span>
+                            <div class="tasks__custom-radio"></div>
+                            <svg class='tasks__checked' width="15px" height="10px">
+                                <polyline points="1,5 6,9 14,1" />
+                            </svg>
+                        </label>
+                        <label class="tasks__container">
+                            <input type="checkbox" name="point" class='tasks__check-radio'>
+                            <span class="tasks__point">Amaze the world</span>
+                            <div class="tasks__custom-radio"></div>
+                            <svg class='tasks__checked' width="15px" height="10px">
+                                <polyline points="1,5 6,9 14,1" />
+                            </svg>
+                        </label>
+    
                     </div>
 
                 </div>
@@ -47,19 +63,3 @@
 
 </body>
 </html>
-
-<!-- <div class="container">
-    <input type="radio" name="point" id="slide1" checked>
-    <input type="radio" name="point" id="slide2">
-    <input type="radio" name="point" id="slide3">
-    <div class="slider">
-        <div class="slides slide1"></div>
-        <div class="slides slide2"></div>
-        <div class="slides slide3"></div>
-    </div>
-    <div class="controls">
-        <label for="slide1"></label>
-        <label for="slide2"></label>
-        <label for="slide3"></label>
-    </div>
-</div>  -->

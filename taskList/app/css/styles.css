@@ -55,7 +55,7 @@
   height: 280px;
   background-color: #fff; }
 
-.tasks {
+.tasks__container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -67,25 +67,57 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
-
-.tasks__check {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+          align-items: center;
+  padding: 10px 0;
+  width: 140px; }
 
 .tasks__point {
-  padding: 10px; }
+  font-size: 12px; }
 
 .tasks__check-radio {
-  padding: 10px; }
+  display: none; }
+
+.tasks__checked {
+  display: none;
+  stroke: #C8D4D9;
+  fill: none;
+  stroke-width: 1.5;
+  stroke-dasharray: 30 30;
+  stroke-dashoffset: 30;
+  -webkit-animation: dash .5s linear forwards;
+          animation: dash .5s linear forwards; }
+
+.tasks__check-radio:checked ~ .tasks__custom-radio {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  opacity: 0; }
+
+.tasks__check-radio:checked ~ .tasks__point {
+  color: rgba(0, 0, 0, 0.5); }
+
+.tasks__check-radio:checked ~ .tasks__checked {
+  display: block; }
+
+.tasks__custom-radio {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s; }
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
