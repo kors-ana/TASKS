@@ -7,27 +7,68 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        padding: {
+            top: 7rem;
+            bottom: 8.5rem;
+        }
     }
 
     &__title {
         @extend %majorText;
         font-size: 3.2rem;
         line-height: 3.2rem;
+        margin: {
+            top: 4.5rem;
+            bottom: 0;
+        }
     }
 
     &__description {
         @extend %minorText;
         font-size: 2rem;
         line-height: 2.4rem;
+        text-align: center;
+        margin: {
+            top: 1.5rem;
+            bottom: 5rem;
+        }
+        max-width: 74rem;
     }
 
     &__feature-list {
         @include row_grid(20px);
+        margin: {
+            top: 3.5rem;
+        }
     }
 }
 
 .feature-list {
+
     &__item {
         @include col-grid(4, 20px);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 6rem;
+    }
+}
+
+.text {
+    margin-left: 3rem;
+
+    &__title {
+        @extend %minorText;
+        color: #000;
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+        margin: 0;
+    }
+
+    &__description {
+        @extend %minorText;
+        color: $grey;
+        font-size: 1.6rem;
+        line-height: 2rem;
     }
 }
