@@ -1,0 +1,33 @@
+.features {
+    background-color: #fff;
+
+    &__container {
+        @extend %container;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        @extend %majorText;
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+    }
+
+    &__description {
+        @extend %minorText;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    &__feature-list {
+        @include row_grid(20px);
+    }
+}
+
+.feature-list {
+    &__item {
+        @include col-grid(4, 20px);
+    }
+}
