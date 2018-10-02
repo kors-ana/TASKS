@@ -1,0 +1,101 @@
+.footer {
+    background-color: #000;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6rem 0 10rem;
+    }
+
+    &__title {
+        @extend %majorText;
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        color: $yellow;
+        margin-bottom: 2rem;
+    }
+
+    &__description {
+        @extend %minorText;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: $grey;
+        max-width: 74rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: {
+            top: 4rem;
+            right: 1rem;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        min-width: 24rem;
+        margin: {
+            top: 8rem;
+            right: 5rem;
+        }
+    }
+}
+
+.form {
+    &__email {
+        width: 58rem;
+        height: 5rem;
+        padding-left: 2.5rem;
+        border-radius: 0.5rem; 
+        border: none;
+        margin: 0;
+        margin-right: 2rem;
+    }
+    &__button {
+        @extend %majorText;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        height: 5rem;
+        width: 12.5rem;
+        border-radius: 0.5rem;
+        background-color: $yellow;
+        text-transform: uppercase;
+    }
+}
+
+input::placeholder {
+    @extend %minorText;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: $grey;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 85rem;
+    max-height: 10rem;
+    margin: 9rem 0;
+
+    &__text {
+        @extend %minorText;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        color: #fff;
+    }
+}
+.refs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 80px;
+    flex-grow: 3;
+}
