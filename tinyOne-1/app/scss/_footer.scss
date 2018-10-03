@@ -91,11 +91,37 @@ input::placeholder {
         line-height: 2rem;
         color: #fff;
     }
+
+    &__contacts {
+        max-width: 19rem;
+        margin-right: 12rem;
+    }
+
+    &__company {
+        margin: 0;
+    }
+
+    &__address {
+        margin: 0;
+    }
+
+    &__email {
+        margin: 0;
+    }
+
+    &__tel {
+        margin: 0;
+    }
 }
 .refs {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     flex-wrap: wrap;
-    max-height: 80px;
+    max-height: 8rem;
     flex-grow: 3;
+
+    &__container {
+        margin: 0;
+    }
 }

@@ -445,6 +445,22 @@ input::placeholder {
   line-height: 2rem;
   color: #fff; }
 
+.info__contacts {
+  max-width: 19rem;
+  margin-right: 12rem; }
+
+.info__company {
+  margin: 0; }
+
+.info__address {
+  margin: 0; }
+
+.info__email {
+  margin: 0; }
+
+.info__tel {
+  margin: 0; }
+
 .refs {
   display: -webkit-box;
   display: -webkit-flex;
@@ -455,11 +471,18 @@ input::placeholder {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  max-height: 80px;
+  max-height: 8rem;
   -webkit-box-flex: 3;
   -webkit-flex-grow: 3;
       -ms-flex-positive: 3;
           flex-grow: 3; }
+
+.refs__container {
+  margin: 0; }
